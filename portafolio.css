@@ -40,6 +40,10 @@
   padding: 3% 15% 3%;
   background-color: var(--white);
 }
+
+.portafolio h4 {
+  text-align: center;
+}
  .portafolioContainer {
   height: auto;
   display: flex;
@@ -105,9 +109,6 @@
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .titleFolio {
-    margin-right: 10%;
-  }
 }
 
 
