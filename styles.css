@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+body,
+html {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --grayLight: #878787;
+  --grayDark: #494949;
+  --greenDark: #0f765a;
+  --greenLight: #b7e144;
+  --white: #ffffff;
+  --pink: #f8b28c;
+  --orange: #f07f14;
+  --yellow: #ffe144;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*----------------------------Social Networks----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.redes {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: flex;
+  transition: all 0.5s;
+}
+
+.icon-facebook {
+  background: #2e406e;
+}
+.icon-instagram {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+.icon-whatsapp {
+  background-color: var(--greenDark);
+}
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------Header----------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.parallaxContainer1 {
+  width: 100%;
+  height: 90vh;
+  background-image: url(img/frutas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  z-index: 10;
+  width: 60vw;
+}
+
+.menu {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.menu a {
+  font-family: "Raleway";
+  font-weight: regular;
+  color: var(--grayLight);
+  padding: 0% 1% 0%;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav a {
+  color: black;
+  height: 45px;
+  font-size: 20px;
+}
+.sidenav-trigger {
+  display: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------Quienes somos---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.quienesSomos {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.parallaxContainer2 {
+  width: 100%;
+  height: 60vh;
+  background-image: url(img/comeSano.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sloganContainer {
+  width: 100%;
+  height: 60vh;
+  opacity: 50%;
+  position: relative;
+  z-index: 0;
+  background-color: black;
+}
+.slogan {
+  font-family: "Raleway";
+  font-style: italic;
+  font-size: 300%;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.sectionQS {
+  background-color: white;
+  padding: 2% 0% 2%;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*----------------------------valores instituciones----------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.parallaxContainer3 {
+  width: 100%;
+  height: 20vh;
+  background-image: url(img/naranjas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nuestrosValores {
+  padding: 3% 15% 3%;
+  text-align: center;
+}
+
+.valores {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.valores div {
+  width: 210px;
+  margin: 1%;
+  padding: 3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valores img {
+  width: 70%;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------Testimonios----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.parallaxContainer4 {
+  width: 100%;
+  height: 500;
+  background-image: url(img/sandia.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonios {
+  padding: 3% 0 3%;
+  text-align: center;
+  color: var(--white);
+}
+.carousel {
+  min-height: 400px;
+
+}
+.carousel .carousel-item {
+  width: 400px;
+  height: 400px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*----------------------------------Contacto-----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.contact {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+}
+.contactContainer {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 3%;
+}
+.map {width: 50%;
+height: 100%;}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  margin: 5%;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*----------------------------------Footer-------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+footer {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5% 0 1.5%;
+}
+
+.socialFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.socialFooter img {
+  width: 20px;
+  margin: 2px;
+}
+
+.desarrollo {
+  font-size: 12px;
+}
+
+
+.escondido {
+  display: none;
+}
+
+
+

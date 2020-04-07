@@ -1,0 +1,42 @@
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------Header----------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.parallaxPortafolio {
+  width: 100%;
+  height: 40vh;
+  background-image: url(img/frutas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoPortafolio {
+  position: relative;
+  z-index: 10;
+  width: 30%;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------Versión Responsie----------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+@media (max-width: 800px) {
+  
+  .logoPortafolio {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .logoPortafolio {
+    width: 70%;
+  }
+}
+
+
