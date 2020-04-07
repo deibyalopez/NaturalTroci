@@ -43,20 +43,20 @@
  .portafolioContainer {
   height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
  }
 
  .elemento {
-   width: 220px;
-   height: 410px;
-   margin-top: 3%;
+   width: 300px;
+   height: 500px;
+   margin: 1%;
    background-color: var(--white);
    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
  }
  
  .imageFolio {
-   width: 220px;
+   width: 300px;
  }
 
  .textFolio{
@@ -74,18 +74,43 @@
  }
 
 
-
-
 /*-----------------------------------------------------------------------------*/
 /*--------------------------------Versión Responsie----------------------------*/
 /*-----------------------------------------------------------------------------*/
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   
   .logoPortafolio {
     width: 50%;
   }
+
+  .portafolio {
+    padding: 1% 1% 1%;
+  }
+
+  .portafolioContainer {
+    justify-content: space-evenly;
+   }
+
+
+  .imageFolio {
+    width: 100%;
+  }
+  
+  .elemento {
+    width: 48%;
+    height: auto;
+    margin-bottom: 1%;
+    background-color: var(--white);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .titleFolio {
+    margin-right: 10%;
+  }
 }
+
+
 
 @media (max-width: 600px) {
   
