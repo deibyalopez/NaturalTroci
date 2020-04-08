@@ -52,15 +52,15 @@
  }
 
  .elemento {
-   width: 300px;
-   height: 500px;
+   width: 250px;
+   height: 450px;
    margin: 1%;
    background-color: var(--white);
    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
  }
  
  .imageFolio {
-   width: 300px;
+   width: 250px;
  }
 
  .textFolio{
@@ -82,7 +82,7 @@
 /*--------------------------------Versión Responsie----------------------------*/
 /*-----------------------------------------------------------------------------*/
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   
   .logoPortafolio {
     width: 50%;
@@ -110,8 +110,6 @@
   }
 
 }
-
-
 
 @media (max-width: 600px) {
   
