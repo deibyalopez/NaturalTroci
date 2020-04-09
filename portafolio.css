@@ -44,6 +44,13 @@
 .portafolio h4 {
   text-align: center;
 }
+
+.descargar {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
  .portafolioContainer {
   height: auto;
   display: flex;
